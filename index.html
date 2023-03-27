@@ -12,9 +12,9 @@
 
 <body>
     <header>
-        <h1 class="text-center">Welcome To My Phone Shop</h1>
+        <h1 class="text-center mb-3">Welcome To My Phone Shop</h1>
     </header>
-    <main class="container">
+    <main class="container text-center">
         <section>
             <div class="mb-3 w-50 mx-auto d-flex gap-3">
                 <input id="search-field" type="text" class="form-control" placeholder="Search Phone">
@@ -23,17 +23,18 @@
         </section>
         <section>
             <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4 mt-3 rounded-3">
-                <!-- <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div> -->
+                
             </div>
+            <div id="no-found-message" class="mt-4 text-center d-none">
+                <h3 class="text-warning">No Phones Found</h3>
+            </div>
+        </section>
+        <section class="d-none" id="loader">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
         </section>
     </main>
 
