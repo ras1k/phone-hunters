@@ -86,4 +86,5 @@ const loadPhoneDetails = async(id) =>{
     console.log(data.data)
 }
 
+//lol
 // loadPhone();
